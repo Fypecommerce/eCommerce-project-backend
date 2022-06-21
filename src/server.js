@@ -31,6 +31,10 @@ const productRoute = require("./routes/product.routes");
 
 app.use("/product", productRoute);
 
+app.get("/", (req, res) => {
+  res.json({ app: "fype-ecommerce-api", version: "1.0.0v" });
+});
+
 // app listening at $port
 app.listen(port, function () {
   Consola.info(`Server running on port. ${port}`);

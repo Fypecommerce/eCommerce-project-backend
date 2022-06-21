@@ -4,7 +4,6 @@ const productModel = require("../models/product.model");
 // controller function to add product in the db
 async function addProduct(req, res) {
   try {
-    console.log("Hello");
     const { image, name, price, discount } = req.body;
     const newProduct = new productModel({
       image,

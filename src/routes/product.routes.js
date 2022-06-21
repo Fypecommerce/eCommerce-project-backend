@@ -5,7 +5,7 @@ const productRouter = Router();
 
 // importing controllers
 const addProduct = require("../controllers/addProduct");
-const addReview = require("../controllers/aaddreview");
+const addReview = require("../controllers/addreview");
 
 // adding products
 productRouter.post("/add", async function (req, res) {
